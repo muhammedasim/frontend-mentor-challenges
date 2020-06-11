@@ -89,9 +89,24 @@ function validateForm(e) {
     removeError(password, passwordErrorMsg);
   }
 
+  let modalMsg = document.getElementById('modal-alert-para')
+  const modal = document.getElementById('myModal');
+  const btnModalClose = document.querySelector('.modalClose');
   if (valid) {
     form.reset();
-    
+    modalMsg.textContent = `${fnameValue} ${lnameValue}`;
+    modal.style.display = "block";
+
+    btnModalClose.onclick = function() {
+      modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+
   }
 }
 
