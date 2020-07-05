@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | pricing-component-with-toggle</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  
+  <link href="style.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="wrapper">
+  <div class="container">
+    <img src="images/bg-top.svg" class="bg-top" alt="">
+    <img src="images/bg-bottom.svg" class="bg-bottom" alt="">
+    
+    <div class="plan-selector-section">
+      <h3 class="main-head">Our Pricing</h3>
+      <div class="plan-selector-toggle-container">
+        <span class="plan-toggle-annually">Annually</span>
+          <label class="toggle-button">
+            <input type="checkbox" name="plan-toggle" id="plan-toggle" checked>
+            <span class="toggle"></span>
+          </label>
+        <span class="plan-toggle-monthly">Monthly</span>
+      </div>
+    </div><!--.plan-selector-section ends-->
+    
+    <div class="plan-detail-cards-section">
+      <div class="plan-detail-card">
+        <h4 class="plan-name">Basic</h4>
+        <div class="plan-price monthly-price d-flex"><span>&dollar;</span>19.99</div>
+        <div class="plan-price annually-price"><span>&dollar;</span>199.99</div>
+        <hr>
+        <p>500 GB Storage</p><hr>
+        <p>2 Users Allowed</p><hr>
+        <p>Send up to 3 GB</p><hr>
+        <a href="#">Learn More</a>
+      </div>
+      <div class="plan-detail-card" id="card-professional">
+        <h4 class="plan-name">Professional</h4>
+        <div class="plan-price monthly-price d-flex"><span>&dollar;</span>24.99</div>
+        <div class="plan-price annually-price"><span>&dollar;</span>249.99</div>
+        <hr>
+        <p>1 TB Storage</p><hr>
+        <p>5 Users Allowed</p><hr>
+        <p>Send up to 10 GB</p><hr>
+        <a href="#">Learn More</a>
+      </div>
+      <div class="plan-detail-card">
+        <h4 class="plan-name">Master</h4>
+        <div class="plan-price monthly-price d-flex"><span>&dollar;</span>39.99</div>
+        <div class="plan-price annually-price"><span>&dollar;</span>399.99</div>
+        <hr>
+        <p>2 TB Storage</p><hr>
+        <p>10 Users Allowed</p><hr>
+        <p>Send up to 20 GB</p><hr>
+        <a href="#">Learn More</a>
+      </div>
+    </div><!--.plan-detail-cards-section ends-->
+
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Muhammed Asim</a>.
+  </div>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>

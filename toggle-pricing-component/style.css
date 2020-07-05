@@ -1,0 +1,271 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&display=swap'); */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(240, 78%, 98%);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  
+}
+
+hr {
+  border-top: none;
+  color: hsl(232, 13%, 33%);
+  margin: 0 auto;
+  width: 290px;
+}
+
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.container {
+  max-width: 1140px;
+  margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%;
+}
+
+.bg-top {
+  position: absolute;
+  height: 600px;
+  max-width: 350px;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.bg-bottom {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.plan-selector-section {
+  padding-top: 3.5%;
+  margin-bottom: 3.5%;
+  text-align: center;
+}
+
+.main-head {
+  font-size: 30px;
+  color: hsl(233, 13%, 49%);
+}
+
+.plan-selector-toggle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.toggle-button {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.toggle-button input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(65deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  border-radius: 34px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.toggle:active {
+  opacity: .6;
+}
+
+.toggle::before {
+  position: absolute;
+  content: '';
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .toggle::before {
+  transform: translateX(26px);
+}
+
+.plan-toggle-annually {
+  padding-right: 20px;
+}
+
+.plan-toggle-monthly {
+  padding-left: 20px;
+}
+
+.plan-toggle-annually, .plan-toggle-monthly {
+  color: hsl(234, 14%, 74%);
+}
+
+/* plan-detail-cards-section */
+.plan-detail-cards-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plan-detail-card {
+  max-width: 100%;
+  width: 350px;
+  height: 460px;
+  background-color: #fff;
+  border-radius: 10px;
+  color: hsl(233, 13%, 49%);
+  text-align: center;
+  padding-top: 36px;
+  box-shadow: 4px 3px 18px 0 rgba(169, 169, 169, 0.2),
+  -4px 3px 18px 0 rgba(169, 169, 169, 0.2);
+}
+
+#card-professional {
+  height: 500px;
+  background-image: linear-gradient(135deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  color: #fff;
+  padding-top: 55px;
+  box-shadow: 4px 3px 18px 0px rgba(163, 168, 240, 0.25),
+  -4px 3px 18px 0px rgba(163, 168, 240, 0.25);
+  z-index: 1;
+}
+
+#card-professional .d-flex{
+  color: #fff;
+}
+
+#card-professional hr {
+  opacity: 0.4;
+}
+
+.plan-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.plan-price {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 70px;
+  font-weight: bold;
+  color: hsl(232, 13%, 33%);
+  padding-top: 22px;
+  padding-bottom: 25px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.plan-price span {
+  font-size: 40px;
+  padding-right: 8px;
+}
+
+.plan-detail-card p {
+  height: 55px;
+  padding-top: 18px;
+}
+
+.plan-detail-card a {
+  display: inline-block;
+  width: 290px;
+  height: 45px;
+  background-image: linear-gradient(65deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  border-radius: 6px;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-top: 27px;
+  padding-top: 12.5px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.plan-detail-card a:hover {
+  background-image: none;
+  background-color: #fff;
+  border: 1px solid hsl(232, 13%, 33%);
+  color: hsl(237, 63%, 64%);
+}
+
+#card-professional a {
+  background-color: #fff;
+  background-image: none;
+  color: hsl(237, 63%, 64%);
+}
+
+#card-professional a:hover {
+  background-image: linear-gradient(65deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 768.98px) {
+  .bg-top {
+    top: -25px;
+    right: -185px;
+  }
+
+  .plan-selector-section {
+    padding-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .plan-detail-cards-section {
+    flex-direction: column;
+  }
+
+  .plan-detail-card {
+    margin-bottom: 30px;
+  }
+
+  .attribution{
+    width: 50%;
+    line-height: 1.4;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
