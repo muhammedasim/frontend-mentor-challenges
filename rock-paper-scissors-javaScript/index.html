@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  
+  <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+  <div id="wrapper">
+    <header>
+      <div class="head-section">
+        <div class="logo">
+          <h2 class="logo__head">Rock<br>Paper<br>Scissors</h2>
+        </div>
+        <div class="score-container">
+          <span class="score-container__head">Score</span>
+          <span class="score-container__score">0</span>
+        </div>
+      </div>
+    </header>
+
+    <div class="choice-container">
+      <div class="bg-triangle">
+        <img src="images/bg-triangle.svg" alt="bg triangle" class="bg-triangle__img">
+      </div>
+      <div id="paper" class="choice">
+        <img src="images/icon-paper.svg" alt="paper icon" class="choice-img">
+      </div>
+      <div id="scissors" class="choice">
+        <img src="images/icon-scissors.svg" alt="scissors icon" class="choice-img">
+      </div>
+      <div id="rock" class="choice">
+        <img src="images/icon-rock.svg" alt="rock icon" class="choice-img">
+      </div>
+    </div>
+
+    <div class="result-container">
+      <div class="our-result">
+        <span class="head">You Picked</span>
+        <div id="our-icon-wrap" class="result">
+          <img src="" alt="icon" class="choice-img">
+        </div>
+      </div>
+      <div class="status-container">
+        <h2 class="status-head">you win</h2>
+        <button class="play-again-btn">Play again</button>
+      </div>
+      <div class="house-result">
+        <span class="head">The House Picked</span>
+        <div class="house-result-bg"></div>
+        <div id="house-icon-wrap" class="result">
+          <img src="" alt="icon" class="choice-img">
+        </div>
+      </div>
+    </div>
+
+    <div class="rules-container">
+      <button class="rules-btn">Rules</button>
+    </div>
+
+    <div class="modal-container">
+      <div class="modal-content">
+        <h1 class="modal-head">Rules</h1>
+        <span class="modal-close">&times</span>
+        <div class="modal-img"></div>
+      </div>
+    </div>
+  </div><!--/#wrapper-->
+
+  <div class="attribution">
+    Challenge by <a href="#">Frontend Mentor</a>. 
+    Coded by <a href="#">Muhammed Asim</a>.
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
